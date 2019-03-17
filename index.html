@@ -7,9 +7,7 @@
     <link href="./css/main.css" type="text/css" rel="stylesheet">
     <title>Assignment - 3</title>
  </head>
-<body>
-
-
+<body class="container">
     <div id="header">
         <div>
             <h1>Classmate Recommender</h1>
@@ -23,7 +21,7 @@
         <div id="feature">
             <p>User Info</p>
             <label for="name" class="title">Name:</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" name="studentName" required="required" />
             <br />
             <br />
             <span class="title">Gender:</span>
@@ -37,7 +35,7 @@
         </div>
         <div class="article column1">
             <p>Choose an Artist</p>
-            <select artistName="Choose an Artist">
+            <select artistName="artist">
                 <option value="a1">Artist 1</option>
                 <option value="a2">Artist 2</option>
                 <option value="a3">Artist 3</option>
@@ -47,7 +45,7 @@
         </div>
         <div class="article column2">
             <p>Choose a Song</p>
-            <select name="Choose a Song">
+            <select name="Song">
                 <option value="s1">Song 1</option>
                 <option value="s2">Song 2</option>
                 <option value="s3">Song 3</option>
@@ -57,21 +55,22 @@
         </div>
         <div class="article column3">
             <p>Choose a Genre</p>
-            <select name="Choose a Genre">
+            <select name="genre">
                 <option value="g1">Hip Hop</option>
                 <option value="g2">Raggae</option>
                 <option value="g3">Country</option>
                 <option value="g4">Rock</option>
+                <option value="g5">Pop</option>
             </select>
             <br><br>
         </div>
     </div>
     <div id="footer">
-        <p>&copy; Copyright 2019</p>
-        <ul>
+        <p class="p-footer">&copy; Copyright 2019</p>
+        <ul class="p-footer">
             <li><a href="index.html">Home</a></li>
             <li><a href="result.html">Result</a></li>
-            <li><a href="www.usf.edu">USF</a></li>
+            <li><a href="http://www.usf.edu">USF</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>

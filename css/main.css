@@ -42,28 +42,31 @@ li {
     padding: 0.5em;
 }
 
-#nav, #footer , #header{
-
-    
-    background-color: #efefef;
+#nav, #footer, #header {
+    /*background-color: aliceblue;*/
     padding: 0.5em 0;
 }
+.p-footer {
+    font-family: Arial, Verdana, sans-serif;
+    color: #513122;
+    text-align: left;
+}
+
 
 #feature, .article {
     height: 10em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     background-color: aliceblue;
-    background-image: url('img/music.jpg');
-
 }
 
 
 /*Set background image*/
 .container {
-  background-image: url('../img/music.jpg');
-  height: 100%;
-  background-position: center;
-  background-size:initial;
+    background-image: url('../img/vintage_radio.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.85;
 }
 
 

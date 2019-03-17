@@ -7,30 +7,49 @@
     <link href="./css/main.css" type="text/css" rel="stylesheet">
     <title>Assignment - 3 result page</title>
 </head>
+<head class="middle">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Genres', 'Selections'],
+          ['HipHop',     11],
+          ['Raggae',      2],
+          ['Country',  2],
+          ['Pop', 2],
+          ['Rock',    7]
+        ]);
+
+        var options = {
+          title: 'ISM6225 Survey Reuslts'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
 
 
 <body>
-    <div id="header">
-        <div>
-            <h1>Results</h1>
-            <h1>Fancy Chart</h1>
-
-        </div>
-
-
-    </div>
-    <div id="footer">
-        <p>&copy; Copyright 2019</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="result.html">Result</a></li>
-            <li><a href="www.usf.edu">USF</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-    </div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
 </body>
+
+<div id="footer">
+    <p class="p-footer">&copy; Copyright 2019</p>
+    <ul class="p-footer">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="result.html">Result</a></li>
+        <li><a href="http://www.usf.edu">USF</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</div>
 
 </html>
