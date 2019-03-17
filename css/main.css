@@ -11,6 +11,8 @@ html {
     color: #665544;
     text-align: center;
 }
+
+
 body {
     width: 90%;
     margin: 0 auto;
@@ -20,7 +22,8 @@ body {
     overflow: auto;
 }
 
-#nav, #feature, #footer {
+
+#nav, #feature, #footer, #header {
     margin: 1%;
 }
 
@@ -39,7 +42,9 @@ li {
     padding: 0.5em;
 }
 
-#nav, #footer {
+#nav, #footer , #header{
+
+    
     background-color: #efefef;
     padding: 0.5em 0;
 }
@@ -47,17 +52,20 @@ li {
 #feature, .article {
     height: 10em;
     margin-bottom: 1em;
-    background-color: #efefef;
+    background-color: aliceblue;
+    background-image: url('img/music.jpg');
+
 }
 
 
 /*Set background image*/
 .container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
+  background-image: url('../img/music.jpg');
   height: 100%;
   background-position: center;
-  background-size: cover;
+  background-size:initial;
 }
+
 
 /* Position text in the middle */
 .middle {
