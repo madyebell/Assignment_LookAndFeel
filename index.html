@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <title>Assignment - 3</title>
+ </head>
 <body>
+    <div id="header">
+        <h1>Classmate Recommender</h1>
+        <div id="nav">
+            <h1>Who are you most similar to in our class?</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="feature">
+            <p>User Info</p>
+            <label for="name" class="title">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br />
+            <br />
+            <span class="title">Gender:</span>
+            <input type="radio" name="gender" id="male" value="M" />
+            <label for="male">M</label>
+            <input type="radio" name="gender" id="female" value="F" />
+            <label for="female">F</label><br />
+            <br />
+            <br />
+            <input type="submit" value="Register" id="submit" />
+        </div>
+        <div class="article column1">
+            <p>Choose an Artist</p>
+            <select artistName="Choose an Artist">
+                <option value="a1">Artist 1</option>
+                <option value="a2">Artist 2</option>
+                <option value="a3">Artist 3</option>
+                <option value="a4">Artist 4</option>
+            </select>
+            <br><br>
+        </div>
+        <div class="article column2">
+            <p>Choose a Song</p>
+            <select name="Choose a Song">
+                <option value="s1">Song 1</option>
+                <option value="s2">Song 2</option>
+                <option value="s3">Song 3</option>
+                <option value="s4">Song 4</option>
+            </select>
+            <br><br>
+        </div>
+        <div class="article column3">
+            <p>Choose a Genre</p>
+            <select name="Choose a Genre">
+                <option value="g1">Hip Hop</option>
+                <option value="g2">Raggae</option>
+                <option value="g3">Country</option>
+                <option value="g4">Rock</option>
+            </select>
+            <br><br>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; Copyright 2019</p>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">USF</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
 
-    <h1>Classmate Recommender</h1>
-    <p>Who are you most similar to in our class?</p>
-
-    <br><br>
-    Name: <input type="text" name="fullname"><br>
-
-
-    <p>Choose an Artist</p>
-    <select name="Choose an Artist">
-        <option value="a1">Artist 1</option>
-        <option value="a2">Artist 2</option>
-        <option value="a3">Artist 3</option>
-        <option value="a4">Artist 4</option>
-    </select>
-    <br><br>
-
-    <p>Choose a Song</p>
-    <select name="Choose a Song">
-        <option value="s1">Song 1</option>
-        <option value="s2">Song 2</option>
-        <option value="s3">Song 3</option>
-        <option value="s4">Song 4</option>
-    </select>
-    <br><br>
-
-    <p>Choose a Genre</p>
-    <select name="Choose a Genre">
-        <option value="g1">Hip Hop</option>
-        <option value="g2">Raggae</option>
-        <option value="g3">Country</option>
-        <option value="g4">Rock</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Next">
-    </form>
-
-    <p id="ab">Home</p>
-    <p id="disc">Discover</p>
-    <p id="us">Us</p>
-
+    </div>
 </body>
+</html>
