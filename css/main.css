@@ -46,12 +46,22 @@ li {
     /*background-color: aliceblue;*/
     padding: 0.5em 0;
 }
+
+.p {
+    font-family: Arial, Verdana, sans-serif;
+    color: #513122;
+    text-align: center;
+}
+.p1 {
+    font-family: Arial, Verdana, sans-serif;
+    color: #513122;
+    text-align: center;
+}
 .p-footer {
     font-family: Arial, Verdana, sans-serif;
     color: #513122;
     text-align: left;
 }
-
 
 #feature, .article {
     height: 10em;
