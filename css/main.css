@@ -52,11 +52,12 @@ li {
     color: #513122;
     text-align: center;
 }
-.p1 {
+.solidBackground {
     font-family: Arial, Verdana, sans-serif;
-    color: #513122;
+    background-color: beige;
     text-align: center;
 }
+
 .p-footer {
     font-family: Arial, Verdana, sans-serif;
     color: #513122;
